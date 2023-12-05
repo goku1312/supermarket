@@ -1,0 +1,37 @@
+from django.urls import path
+from app1 import views
+
+urlpatterns=[ 
+    path('',views.login),
+    path('home',views.login),
+    path('userhome',views.userhome),
+    path('login',views.login),
+    path('logout',views.logout),
+    path("item",views.item),
+    path('subcatergory',views.subcatergory),
+    path('cate',views.cate),
+    path('delete',views.delete),
+    path('staff',views.staff),
+    path("makeactivate",views.makeactivate),
+    path("makedeactivate",views.makedeactivate),
+    path('reset',views.reset),
+    path('stflogout',views.stflogout),
+    path('leave',views.leave),
+    path("status",views.status),
+    path('leavests',views.leavests),
+    path('approved',views.approved),
+    path("denied",views.denied),
+    path('staffhome',views.staffhome),
+    path('profile',views.profile),
+    path('imgupdate',views.imgupdate),
+    path('passupdate',views.passupdate),
+    path('update',views.update),
+    path('zone',views.zone),
+    path('like',views.like),
+    path('cmt',views.cmt),
+    path('allmsg',views.allmsg),
+    # path('addfriend',views.addfriend),
+    path('friendmsg',views.friendmsg),
+    path("blank",views.blank),
+    
+]
